@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./main.css">
+    <title>DAPP Tasks</title>
+</head>
+
+<body>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card card-body rounded-0 mb-4 bg-dark">
+                    <h1>DApp</h1>
+                    <h6 class="text-muted">Decentralized Task App</h6>
+                    <span>Wallet</span>
+                    <span id="account"></span>
+                </div>
+                <form class="card card-body bg-dark dounded-0" id="taskForm">
+                    <h4>Save a Task</h4>
+                    <input type="text" name="title" placeholder="Write a Task" class="form-control bg-dark text-white rounded-0 border-0 my-4">
+                    <textarea rows="2" name="description" class="form-control bg-dark text-white rounded-0 border-0 my-4" placeholder="I have to do..."></textarea>
+
+                    <button class="btn btn-primary">Save</button>
+                </form>
+            </div>
+            <div class="col-md-8">
+                <div id="taskList">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/libs/@truffle/contract/dist/truffle-contract.min.js"></script>
+    <script src="app.js"></script>
+    <script src="ui.js"></script>
+</body>
+
+</html>
